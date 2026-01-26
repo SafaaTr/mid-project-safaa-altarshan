@@ -112,7 +112,7 @@ header {
 
     .hero {
 
-        background-image: url(/assets/images/heroo.png);
+        background-image: url(../images/heroo.png);
         display: flex;
 
         .text-hero {
