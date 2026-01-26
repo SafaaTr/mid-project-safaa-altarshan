@@ -1,0 +1,221 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    height: 108px;
+
+    .heero {
+
+        background-color: #F5F5F5;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0px 70px;
+        gap: 8px;
+
+        .color-para {
+            color: #9D9D9D;
+            margin-bottom: 0px;
+        }
+
+
+
+    }
+
+}
+
+
+.all-courses {
+    margin: 70px 70px 20px 70px;
+
+    .text-search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icons {
+            display: flex;
+            gap: 20px;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .icon-search2 {
+                position: relative;
+                margin-right: 20px;
+
+                input {
+                    border: none;
+                    border-bottom: 2px solid black;
+                    width: 270px;
+                    padding: 4px 0px;
+                    outline: none;
+                    height: 31;
+
+                    &::placeholder {
+                        font-family: var(--font-2);
+                        font-size: 18px;
+                        color: Grey;
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    top: -10px;
+                    right: 4px;
+                }
+            }
+        }
+    }
+
+    .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* page-blog */
+    .blog-container {
+        display: block;
+        margin: 50px 0px 20px 0px;
+
+        .card-blog {
+            border: 1px solid #EAEAEA;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            min-height: 250px;
+            max-width: 1226px;
+            display: flex;
+
+
+            &:hover {
+                background-color: #F5F5F5;
+
+                h2 {
+                    color: var(--Primary-color);
+                }
+            }
+
+            .img-card {
+                max-width: 420px;
+                max-height: 100%;
+                border-radius: 20px 0px 0px 20px;
+            }
+
+            .text-card {
+                padding: 59px 30px;
+                margin-right: 0px;
+
+                img {
+                    margin-right: 8px;
+                }
+
+                h2 {
+                    max-width: 550px;
+                }
+
+                p {
+                    max-width: 700px;
+                    padding-bottom: 16px;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    .icon-list {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #EAEAEA;
+        border-radius: 50%;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .black {
+        background-color: #000000;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+
+    .heero {
+        padding: 0px 20px;
+    }
+
+    .all-courses {
+        margin: 100px 20px 20px 20px;
+
+        .text-search {
+            align-items: normal;
+            flex-direction: column;
+            gap: 35px;
+
+            .icons {
+
+                .icon-search2 {
+                    input {
+                        width: 230px;
+                    }
+                }
+            }
+
+        }
+
+        .blog-container {
+            display: block;
+        }
+    }
+
+    .arrow-icon {
+        margin-bottom: 40px;
+    }
+
+
+    /* page-blog */
+
+    .blog-container {
+
+        .card-blog {
+
+            flex-direction: column;
+            height: 431px;
+            width: 320px;
+
+            .img-card {
+                border-radius: 20px 20px 0px 0px !important;
+            }
+
+            .text-card {
+                padding: 2px 30px !important;
+            }
+        }
+    }
+
+
+}
