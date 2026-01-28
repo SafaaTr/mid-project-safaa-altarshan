@@ -38,6 +38,15 @@ a {
     color: var(--text-color);
 }
 
+.custom-login-btn {
+    background-color: var(--Primary-color);
+    color: #fff;
+    border-radius: 24px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    border: none;
+}
+
 header {
     height: 100vh;
 
@@ -47,7 +56,8 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        ul {
+
+        .link-hiddin {
             display: flex;
             gap: 31px;
 
@@ -61,21 +71,87 @@ header {
                     font-weight: bolder;
                     font-size: 16px;
                     line-height: 120%;
+                    text-decoration: none;
+                    color: var(--text-color);
 
 
                 }
 
-                i {
-                    color: #ff762d73;
+                .back-home {
+                    background-color: #F5F5F5;
+                    padding: 42px 21px;
+                    color: var(--Primary-color);
+
+                }
+            }
+        }
+
+
+
+
+        .offcanvas-body {
+            .menu {
+
+                .active {
+                    background-color: #F5F5F5;
+                    padding: 8px 12px;
+
+                    a {
+                        color: #FF782D !important;
+                        font-weight: 500;
+                    }
+
+
+
+                }
+
+            }
+        }
+
+        .px-2 {
+            .input-group {
+                .icon-search2 {
+                    position: relative;
+                    margin-right: 20px;
+
+                    input {
+                        border: none;
+                        border-bottom: 1px solid black;
+                        width: 320px;
+                        padding: 10px 0px;
+                        outline: none;
+                        height: 31;
+
+
+                        &::placeholder {
+                            font-family: var(--font-2);
+                            font-size: 18px;
+                            color: Grey;
+                        }
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 6px;
+                        right: 4px;
+
+                    }
                 }
             }
 
-            .back-home {
-                background-color: #F5F5F5;
-                padding: 35px 21px;
-                color: var(--Primary-color);
+            .orange-but {
+                margin: 12px 70px;
+
+                a {
+                    color: #EAEAEA;
+                }
 
             }
+        }
+
+
+        .btn {
+            display: none;
         }
 
         .login {
@@ -98,13 +174,20 @@ header {
                     border-radius: 6px;
                 }
 
+                a {
+                    font-family: var(--font-1);
+                    font-weight: bolder;
+                    font-size: 16px;
+                    line-height: 120%;
+                    text-decoration: none;
+                    color: var(--text-color);
+
+                }
+
             }
 
         }
 
-        .list {
-            display: none;
-        }
 
     }
 
@@ -143,8 +226,8 @@ header {
         img {
             display: flex;
             margin-top: 35px;
-            margin-right: 128px;
-            height: 540px;
+            margin-right: 126px;
+            height: 562px;
         }
     }
 }
@@ -166,14 +249,14 @@ p {
     font-size: 18px;
     line-height: 150%;
     letter-spacing: 0%;
-    
+
 
 }
 
 button {
     border: none;
     background: none;
-    border-radius: 24px;
+    border-radius: 24px !important;
     border: 1px solid #9D9D9D;
     width: 161px;
     padding: 10px 23px;
@@ -201,14 +284,14 @@ button {
 
 
 
-    .container {
+    .containeer {
         margin-top: 68px;
         padding: 16px 85px 0px 85px;
         display: flex;
         gap: 31px;
         flex-wrap: wrap;
 
-        .card {
+        .carrd {
             padding: 44px;
             width: 234px;
             height: 234px;
@@ -259,7 +342,7 @@ button {
     margin: 70px;
 }
 
-.container {
+.containerr {
     display: flex;
     gap: 25px;
     padding: 50px 0px 50px 0px;
@@ -269,7 +352,7 @@ button {
 
         position: relative;
         max-width: 385px;
-        max-height: 474px;
+        max-height: 522px;
         border-radius: 20px;
         border: 1px solid #EAEAEA;
 
@@ -352,7 +435,7 @@ button {
         color: #F5F5F5;
         padding: 8px 12px;
         font-size: 16px;
-        width: 114px;
+        width: 119px;
         border-radius: 8px;
     }
 
@@ -397,6 +480,7 @@ button {
             height: 161px;
             background-color: #F5F5F5;
             border-radius: 20px;
+            border: none;
 
             h1 {
                 text-align: center;
@@ -477,7 +561,7 @@ button {
             letter-spacing: 0%;
             text-transform: capitalize;
             color: #000000;
-            padding-left: 32px;
+            margin: 0px 16px;
 
         }
     }
@@ -519,7 +603,7 @@ footer {
         }
 
         p {
-            padding-bottom: 18px;
+            padding-bottom: 12px;
 
             &:hover {
                 color: var(--Primary-color);
@@ -538,11 +622,11 @@ footer {
         }
 
         .help {
-            padding-bottom: 1px;
+            padding-top: 6px;
         }
 
         .progr {
-            padding-top: 89px;
+            padding-top: 118px;
 
             .orange-p {
                 color: var(--Primary-color);
@@ -585,7 +669,7 @@ footer {
         nav {
             padding: 35px 20px;
 
-            ul {
+            .link-hiddin {
                 display: none;
             }
 
@@ -598,6 +682,11 @@ footer {
                 border: none;
                 background: none;
                 width: 24px;
+            }
+
+            .btn {
+                display: block;
+                padding-right: 20px;
             }
         }
 
@@ -641,7 +730,7 @@ footer {
             }
         }
 
-        .container {
+        .containeer {
             margin-top: 40px;
             padding: 16px 43px 0px 43px !important;
 
@@ -688,7 +777,7 @@ footer {
             padding-left: 33px;
         }
 
-        .container {
+        .containerr {
             flex-direction: column;
 
             .img-card {
@@ -727,7 +816,7 @@ footer {
 
         .container {
             flex-direction: column;
-            margin: 70px 38px;
+            margin: 70px 20px;
         }
 
     }
@@ -763,7 +852,7 @@ footer {
             display: block;
 
             img {
-                margin: 0px 110px;
+                margin: 4px 92px;
             }
         }
 
