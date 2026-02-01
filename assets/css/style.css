@@ -196,6 +196,8 @@ header {
     .hero {
 
         background-image: url(../images/header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
 
         .text-hero {
@@ -225,9 +227,9 @@ header {
 
         img {
             display: flex;
-            margin-top: 35px;
-            margin-right: 126px;
-            height: 562px;
+            margin-top: 42px;
+            margin-right: 180px;
+            height: 557px;
         }
     }
 }
@@ -286,14 +288,14 @@ button {
 
     .containeer {
         margin-top: 68px;
-        padding: 16px 85px 0px 85px;
+        padding: 16px 70px 0px 93px;
         display: flex;
         gap: 31px;
         flex-wrap: wrap;
 
         .carrd {
             padding: 44px;
-            width: 234px;
+            width: 269px;
             height: 234px;
             border-radius: 20px;
             border: 1px solid #EAEAEA;
@@ -345,7 +347,7 @@ button {
 .containerr {
     display: flex;
     gap: 25px;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 50px 70px;
 
 
     .card {
@@ -453,6 +455,7 @@ button {
     margin: 70px;
     background-image: url(../images/section1.png);
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px;
 
     .text-learn {
@@ -470,10 +473,11 @@ button {
 }
 
 .total {
+    margin: 70px;
     .container {
         display: flex;
         gap: 30px;
-        margin: 70px;
+      
 
         .card {
             width: 284px;
@@ -541,6 +545,7 @@ button {
     padding: 65px 12px;
     border-radius: 20px;
     background-image: url(../images/section2.png);
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -777,24 +782,27 @@ footer {
             padding-left: 33px;
         }
 
-        .containerr {
-            flex-direction: column;
-
-            .img-card {
-                width: 100%;
-            }
-
-            .section-bottom {
-                display: block;
-                margin: 0px 82px;
-            }
-        }
+       
 
         .section-top {
             display: none;
         }
 
 
+
+    }
+    .containerr {
+        flex-direction: column;
+        padding: 50px 0px 50px 0px;
+
+        .img-card {
+            width: 100%;
+        }
+
+        .section-bottom {
+            display: block;
+            margin: 0px 82px;
+        }
     }
 
     .learn {
@@ -813,10 +821,10 @@ footer {
     }
 
     .total {
-
+margin: 0px;
         .container {
             flex-direction: column;
-            margin: 70px 20px;
+            margin: 70px 38px;
         }
 
     }

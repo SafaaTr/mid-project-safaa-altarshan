@@ -18,8 +18,17 @@
                 <li><a href="../index.html">Home</a></li>
                 <li> <a href="../src/Courses.html">Courses</a></li>
                 <li><a class="back-home" href="./blog.html">Blog</a></li>
-                <li><a href="./page.html">Page</a><img src="../assets/images/icon/page.png" alt=""></li>
-                <li><a href="../src/Premium.html">Premium Theme</a> </li>
+                <li class="nav-item dropdown pt-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Page
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="pageDropdown">
+                      <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                      <li><a class="dropdown-item" href="./faqs.html">Faqs</a></li>
+                    </ul>
+                  </li>
+                <li><a href="">Premium Theme</a> </li>
             </ul>
             <div class="login">
                 <button><a href="./Login-Register.html">Login / Register</a></button>
@@ -53,12 +62,23 @@
                             <a class="text-decoration-none text-dark " href="../src/blog.html">Blog</a>
                         </li>
 
-                        <li class="mb-3 border-bottom py-2">
-                            <a class="text-decoration-none text-dark" href="../src/page.html">Pages</a>
+                        <li class="mb-3 border-bottom py-2 dropdown">
+                            <a class="text-decoration-none text-dark dropdown-toggle" 
+                               href="#" 
+                               id="mobilePageDropdown" 
+                               data-bs-toggle="dropdown" 
+                               aria-expanded="false">
+                                Pages
+                            </a>
+                        
+                            <ul class="dropdown-menu" aria-labelledby="mobilePageDropdown">
+                                <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="./faqs.html">Faqs</a></li>
+                            </ul>
                         </li>
-
+    
                         <li class="mb-3 border-bottom py-2">
-                            <a class="text-decoration-none text-dark" href="../src/Premium.html">FAQs</a>
+                            <a class="text-decoration-none text-dark" href="">Premium Theme</a>
                         </li>
 
                     </ul>
