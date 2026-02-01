@@ -4,7 +4,8 @@
     gap: 20px;
 
     .form-on {
-        width: 609px;
+        width: 609px ;
+        height: 406px;
         border: 1px solid #EAEAEA;
         border-radius: 20px;
         padding: 30px;
@@ -40,6 +41,10 @@
         padding-top: 30px;
     }
 
+    #from2{
+        height:448px !important;
+        width: 618px;
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -53,7 +58,10 @@
             margin-top: 40px;
             width: 100%;
         }
-
+        #from2{
+           
+            width: 100%;
+        }
 
 
     }

@@ -346,14 +346,14 @@ button {
 
 .containerr {
     display: flex;
-    gap: 25px;
-    padding: 50px 0px 50px 70px;
+    gap: 44px;
+    padding: 50px 0px ;
 
 
     .card {
 
         position: relative;
-        max-width: 385px;
+        max-width: 450px;
         max-height: 522px;
         border-radius: 20px;
         border: 1px solid #EAEAEA;
@@ -473,14 +473,16 @@ button {
 }
 
 .total {
-    margin: 70px;
-    .container {
+    margin: 70px 70px 70px 70px;
+    .contaiiner {
         display: flex;
         gap: 30px;
+        
+      
       
 
         .card {
-            width: 284px;
+            width: 313px;
             height: 161px;
             background-color: #F5F5F5;
             border-radius: 20px;
@@ -493,7 +495,7 @@ button {
             }
 
             p {
-                font-weight: 600px;
+                font-weight: 700px;
                 color: #000000;
                 text-align: center;
             }
@@ -821,10 +823,14 @@ footer {
     }
 
     .total {
-margin: 0px;
-        .container {
+        margin: 0px;
+        .contaiiner {
             flex-direction: column;
             margin: 70px 38px;
+            .card{
+                width: 284px;
+
+            }
         }
 
     }
