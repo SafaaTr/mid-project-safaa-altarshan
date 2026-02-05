@@ -29,6 +29,12 @@
     width: 170px;
     padding: 10px 24px;
     color: #FFFFFF;
+    transition: transform 0.4s ease;
+
+    &:hover {
+
+        transform: translateY(-8px);
+    }
 
 
 }
@@ -45,6 +51,7 @@ a {
     padding: 0.5rem 1.25rem;
     font-weight: 600;
     border: none;
+
 }
 
 header {
@@ -66,7 +73,6 @@ header {
                 list-style: none;
 
                 a {
-
                     font-family: var(--font-1);
                     font-weight: bolder;
                     font-size: 16px;
@@ -74,13 +80,24 @@ header {
                     text-decoration: none;
                     color: var(--text-color);
 
+                    &:hover {
+                        background-color: #F5F5F5;
+                        padding: 44px 12px;
+                        color: var(--Primary-color);
+                    }
+
 
                 }
 
                 .back-home {
                     background-color: #F5F5F5;
-                    padding: 42px 21px;
+                    padding: 44px 21px;
                     color: var(--Primary-color);
+
+                }
+                .not-hover{
+                  
+                     padding: 12px!important;
 
                 }
             }
@@ -267,6 +284,12 @@ button {
     font-size: 18px;
     line-height: 150%;
     text-transform: capitalize;
+    transition: transform 0.4s ease;
+
+    &:hover {
+
+        transform: translateY(-8px);
+    }
 
 }
 
@@ -347,7 +370,7 @@ button {
 .containerr {
     display: flex;
     gap: 44px;
-    padding: 50px 0px ;
+    padding: 50px 0px;
 
 
     .card {
@@ -357,6 +380,10 @@ button {
         max-height: 522px;
         border-radius: 20px;
         border: 1px solid #EAEAEA;
+        transition: transform 0.4s ease-in-out;
+        &:hover{
+            transform: translateY(15px);
+        }
 
 
         img {
@@ -365,7 +392,6 @@ button {
 
         .text-card {
             padding: 20px 20px;
-
 
             h2 {
                 font-family: var(--font-1);
@@ -425,9 +451,6 @@ button {
         }
     }
 
-
-
-
     .button-black {
         position: absolute;
         border: none;
@@ -438,7 +461,13 @@ button {
         padding: 8px 12px;
         font-size: 16px;
         width: 119px;
-        border-radius: 8px;
+        border-radius: 8px !important;
+        transition: transform 0.4s ease;
+
+        &:hover {
+
+            transform: translateY(-8px);
+        }
     }
 
     .img-card {
@@ -474,12 +503,12 @@ button {
 
 .total {
     margin: 70px 70px 70px 70px;
+
     .contaiiner {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         gap: 30px;
-        
-      
-      
 
         .card {
             width: 313px;
@@ -487,6 +516,11 @@ button {
             background-color: #F5F5F5;
             border-radius: 20px;
             border: none;
+            transition: transform 0.4s ease-in-out;
+            &:hover{
+                filter: drop-shadow(2px 2px 10px #555555 );
+                transform: scale(1.1);
+            }
 
             h1 {
                 text-align: center;
@@ -527,7 +561,6 @@ button {
 
             img {
                 margin-right: 8px;
-
             }
         }
 
@@ -772,7 +805,7 @@ footer {
 
         .section-bottom {
             display: block;
-            margin: 0px 36px;
+            margin: auto;
         }
     }
 
@@ -784,7 +817,7 @@ footer {
             padding-left: 33px;
         }
 
-       
+
 
         .section-top {
             display: none;
@@ -793,6 +826,7 @@ footer {
 
 
     }
+
     .containerr {
         flex-direction: column;
         padding: 50px 0px 50px 0px;
@@ -803,7 +837,7 @@ footer {
 
         .section-bottom {
             display: block;
-            margin: 0px 82px;
+            margin: auto;
         }
     }
 
@@ -824,10 +858,12 @@ footer {
 
     .total {
         margin: 0px;
+
         .contaiiner {
             flex-direction: column;
             margin: 70px 38px;
-            .card{
+
+            .card {
                 width: 284px;
 
             }

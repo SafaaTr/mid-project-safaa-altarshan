@@ -8,7 +8,6 @@ header {
     height: 108px;
 
     .heero {
-
         background-color: #F5F5F5;
         height: 60px;
         display: flex;
@@ -23,8 +22,6 @@ header {
 
         .Homepage {
             margin-bottom: 0px;
-
-
         }
     }
 
@@ -42,6 +39,7 @@ header {
 
         .icons {
             display: flex;
+            align-items: center;
             gap: 20px;
 
             img {
@@ -52,35 +50,40 @@ header {
             .icon-search2 {
                 position: relative;
                 margin-right: 20px;
+                padding-bottom: 12px;
+                margin-top: 6px;
 
                 input {
-                    border: none;
+                    border: none ;
                     border-bottom: 2px solid black;
                     width: 270px;
                     padding: 4px 0px;
-                    outline: none;
+                    outline: none !important;
                     height: 31;
+                    
 
                     &::placeholder {
                         font-family: var(--font-2);
                         font-size: 18px;
                         color: Grey;
                     }
+                    &:hover{
+                       filter: drop-shadow(0px 1px 5px var(--Primary-color)); 
+                    }
                 }
 
                 img {
                     position: absolute;
-                    top: 0px;
-                    right: 4px;
+                    top: 5px;
+                    right: 1px;
                 }
             }
         }
     }
 
     .containerr {
-
         flex-wrap: wrap !important;
-        gap: 44px;
+        gap: 38px;
     }
 
     /* page-blog */

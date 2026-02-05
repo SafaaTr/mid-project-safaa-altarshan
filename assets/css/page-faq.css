@@ -4,22 +4,21 @@
     box-sizing: border-box;
 }
 
-.back-home {
-    background-color: #F5F5F5;
-    padding: 42px 21px !important;
-    color: var(--Primary-color);
-}
-
 nav {
     a {
         text-decoration: none;
-        color: var(--text-color);
+        color: var(--text-color); 
+
+        
+        
+
     }
 
     .background-page {
         background-color: #f3f3f3;
         padding: 20px;
     }
+    
 }
 
 .map-info {
